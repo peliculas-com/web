@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Películas</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <header>
+        <h1>PELICULAS</h1>
+    </header>
+
+    <aside id="sidebar" class="sidebar">
+        <nav class="genres">
+            <button onclick="showGenre('romance')">Romance</button>
+            <button onclick="showGenre('accion')">Acción</button>
+            <button onclick="showGenre('drama')">Drama</button>
+            <button onclick="showGenre('comedia')">Comedia</button>
+            <button onclick="showGenre('terror')">Terror</button>
+            <button onclick="showGenre('cienciaFiccion')">Ciencia Ficción</button>
+            <button onclick="showGenre('familiar')">Familiar</button>
+        </nav>
+    </aside>
+
+    <main>
+        <div id="movieGallery" class="gallery">
+            <!-- Las películas relacionadas al género seleccionado aparecerán aquí -->
+        </div>
+    </main>
+
+    <footer>
+        <div class="links">
+            <a href="https://www.netflix.com" target="_blank">Netflix</a>
+            <a href="https://www.paramountplus.com/mx/" target="_blank">Paramount+</a>
+            <a href="https://www.disneyplus.com" target="_blank">Disney+</a>
+            <a href="https://www.hbomax.com" target="_blank">HBO Max</a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
