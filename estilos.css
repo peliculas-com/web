@@ -1,0 +1,53 @@
+/* Adaptación responsiva */
+@media (max-width: 1024px) {
+    .gallery .movie-box {
+        width: calc(33.33% - 10px); /* Tres columnas en pantallas medianas */
+    }
+
+    .genres {
+        flex-wrap: wrap; /* Acomoda botones en varias filas si es necesario */
+        gap: 10px;
+    }
+}
+
+@media (max-width: 768px) {
+    .gallery .movie-box {
+        width: calc(50% - 10px); /* Dos columnas en pantallas pequeñas */
+    }
+
+    .genres button {
+        padding: 10px 15px; /* Reduce el tamaño de los botones */
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .gallery .movie-box {
+        width: 100%; /* Una columna en pantallas muy pequeñas */
+    }
+
+    header {
+        font-size: 1.5rem; /* Ajusta el tamaño del texto del encabezado */
+        padding: 15px;
+    }
+
+    .links a {
+        font-size: 12px; /* Reduce el tamaño de los enlaces */
+    }
+
+    footer {
+        padding: 8px 0; /* Reduce el tamaño del pie de página */
+    }
+}
+
+/* Ajustes generales para mantener el diseño limpio */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+button {
+    max-width: 100%; /* Evita que los botones se salgan del contenedor */
+}
+
